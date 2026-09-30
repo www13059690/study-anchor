@@ -1,0 +1,8 @@
+# study-anchor bundle patch: one Host row.
+#
+# The feature itself lives entirely in the browser half. The Host row exists
+# because a bundle's `dsh.client` declaration is loaded through its Host row,
+# and `index.js` only exports an empty `apply()`.
+- insert:
+    - id: study-anchor
+      name: study-anchor
